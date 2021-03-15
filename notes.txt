@@ -1,0 +1,11 @@
+### GraphQL in the browser
+
+- http://localhost:8080/graphql
+
+mutation {
+  createUser(userInput: {email: "test@test.com", name: "Rico", password: "flow12345"}) {
+    _id
+    email
+  }
+}
+
