@@ -9,3 +9,23 @@ mutation {
   }
 }
 
+
+{
+  login(
+  email: "test@test.com",
+  password: "flow12345") {
+    token
+    userId
+  }
+}
+
+query {
+  posts {
+    posts {
+      _id
+      title
+      content
+    }
+    totalPosts
+  }
+}
